@@ -1,0 +1,17 @@
+ul.navigation {
+  display: flex;
+  background: lightblue;
+  justify-content: space-evenly;
+}
+
+ li{
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight :bold;
+  padding:1rem;
+  text-decoration : underline;
+}
+
+
+
+

@@ -1,0 +1,19 @@
+.test {
+  background-color: black;
+}
+
+.headingsquare {
+  list-style-type: square;
+}
+
+.headingcicle {
+  list-style-type: decimal;
+}
+
+.servicesHeader {
+  color: #003366;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: initial;
+}
+

@@ -1,0 +1,45 @@
+<!--<form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+  Name
+  <input [formControl]="name" required>
+  Email
+  <input [formControl]="email" placeholder="email@example.com" required>
+  Message
+  <textarea [formControl]="message" maxlength="256" placeholder="I'm interested in..." required></textarea>
+  <button [disabled]="isLoading" class="submit" type="submit">Submit</button>
+  <input [formControl]="honeypot" class="hidden" type="text" />
+  <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
+    <span>{{responseMessage}}</span>
+  </div>
+</form>-->
+<!-- Default form contact -->
+
+<div style="font-weight:bold;margin-left:20px;">
+   We at the LAKSHAJEET CONSTRACONS encourage new ideas, fill free to contact us for any Residential & Commercial projects.
+  <br/>
+  Also, we are looking for new talent. If you think you are capable of handling new challenges and solving them then you are in the right place.
+
+</div>
+<br/>
+<form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <div class="maindiv">
+    <p class="h4 mb-4">Please fill information in below fields</p>
+    <!-- Name -->
+    <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInput
+           class="form-career" placeholder="Name" required>
+    <!-- Email -->
+    <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail" mdbInput
+           class="form-career" placeholder="E-mail" required>
+    <!-- Message -->
+
+    <textarea formControlName="contactFormMessage" class="form-career-msg" mdbInput id=""
+              rows="3" placeholder="Message" required></textarea>
+    <!-- Send button -->
+    <div class="form-career-send">
+      <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect"
+              mdbWavesEffect type="submit" [disabled]="false">
+        Send
+      </button>
+    </div>
+  </div>
+</form>
+<!-- Default form contact -->
