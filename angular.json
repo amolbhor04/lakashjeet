@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lakashjeet": {
+    "lakshajeet": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/lakashjeet",
+            "outputPath": "dist/lakshajeet",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "lakashjeet:build"
+            "browserTarget": "lakshajeet:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "lakashjeet:build:production"
+              "browserTarget": "lakshajeet:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lakashjeet:build"
+            "browserTarget": "lakshajeet:build"
           }
         },
         "test": {
@@ -113,16 +113,20 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "lakashjeet:serve"
+            "devServerTarget": "lakshajeet:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "lakashjeet:serve:production"
+              "devServerTarget": "lakshajeet:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
   },
-  "defaultProject": "lakashjeet"
+  "defaultProject": "lakshajeet"
 }
